@@ -1,0 +1,201 @@
+/* TEST: If your website background turns light grey, the CSS is working. 
+   If it stays white, the link in your HTML is broken. */
+body {
+    background-color: #fbfbfd; 
+    margin: 0;
+    padding: 0;
+    
+    /* THE APPLE FONT STACK */
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    
+    color: #1d1d1f;
+    -webkit-font-smoothing: antialiased; /* Makes text look crisp on Mac */
+/* Circular Logo - Add this anywhere in your style.css */
+.logo-circle {
+    width: 45px;
+    height: 45px;
+    background-color: #1d1d1f; 
+    color: #ffffff; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%; 
+    font-weight: 900; /* This makes it very thick */
+    font-size: 18px;
+    letter-spacing: -1px;
+    cursor: pointer;
+}
+
+}
+
+.container {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 0 22px;
+}
+
+/* Nav Bar */
+nav {
+    height: 44px;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: saturate(180%) blur(20px);
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #d2d2d7;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
+.nav-container {
+    width: 100%;
+    max-width: 980px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 22px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #1d1d1f;
+    font-size: 12px;
+    letter-spacing: -0.01em;
+    opacity: 0.8;
+}
+
+nav a:hover { opacity: 1; color: #0066cc; }
+
+/* Hero Section */
+.hero {
+    margin-top: 150px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 56px;
+    line-height: 1.07143;
+    font-weight: 600;
+    letter-spacing: -0.005em;
+    margin-bottom: 0;
+}
+
+.tagline {
+    font-size: 28px;
+    line-height: 1.10722;
+    font-weight: 400;
+    letter-spacing: .004em;
+    color: #86868b;
+    margin-top: 10px;
+}
+
+.cta-button {
+    display: inline-block;
+    background: #0071e3;
+    color: white;
+    padding: 12px 22px;
+    border-radius: 980px;
+    text-decoration: none;
+    font-size: 17px;
+    margin-top: 30px;
+}
+
+/* Page Specific Styles */
+.page-header {
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+
+.subtitle {
+    font-size: 24px;
+    color: #86868b;
+}
+
+.content-box {
+    background: #ffffff;
+    border: 1px solid #d2d2d7;
+    padding: 40px;
+    border-radius: 20px;
+    font-size: 19px;
+    line-height: 1.5;
+}
+
+.content-box p {
+    margin-bottom: 20px;
+}
+
+strong {
+    color: #0066cc;
+    font-weight: 600;
+}
+/* Experience Styling */
+.experience-grid {
+    display: grid;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.exp-card {
+    background: #ffffff;
+    border: 1px solid #d2d2d7;
+    padding: 30px;
+    border-radius: 18px;
+    transition: transform 0.2s ease;
+}
+
+.exp-card:hover {
+    transform: translateY(-5px);
+}
+
+.date {
+    font-size: 12px;
+    font-weight: 600;
+    color: #0066cc;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.exp-card h3 { margin: 10px 0 5px; }
+.location { color: #86868b; margin-bottom: 15px; font-size: 14px; }
+.exp-card ul { padding-left: 20px; color: #424245; }
+.exp-card li { margin-bottom: 10px; }
+
+/* Ensure the section ABOVE this has a closing } bracket! */
+
+.contact-form {
+    max-width: 600px;
+    margin: 40px auto; /* Added margin to push it away from header */
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* This forces the font to match the rest of the site */
+input, textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #d2d2d7;
+    border-radius: 12px;
+    font-size: 16px;
+    font-family: inherit; /* This inherits the Apple font from 'body' */
+    background: #f5f5f7;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #0066cc;
+    background: #ffffff;
+}
+
+.contact-form .cta-button {
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
